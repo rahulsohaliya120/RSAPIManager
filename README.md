@@ -55,11 +55,14 @@ If you’re using your own Swift Package, add this dependency:
 dependencies: [
  .package(url: "https://github.com/rahulsohaliya120/RSAPIManager.git", from: "1.0.0")
 ]
+```
 
-
+```
 Then import it:
 import RSAPIManager
+```
 
+```
 🧠 Usage Example
 1️⃣ Basic GET Request (with Codable)
 
