@@ -55,7 +55,7 @@ If you’re using your own Swift Package, add this dependency:
 dependencies: [
  .package(url: "https://github.com/rahulsohaliya120/RSAPIManager.git", from: "1.0.0")
 ]
-```
+
 
 Then import it:
 import RSAPIManager
@@ -91,6 +91,7 @@ API_Manager.shared.GET_METHOD(
         print("❌ Error:", error?.localizedDescription ?? "Unknown error")
     }
 }
+```
 
 🧩 Example Parameter Encodings
 
