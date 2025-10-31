@@ -5,7 +5,7 @@
 [![Swift](https://img.shields.io/badge/Swift-5.9+-orange?logo=swift)](https://swift.org)
 [![Platform](https://img.shields.io/badge/platforms-iOS%2016%2B-blue)](https://swiftpackageindex.com/rahulsohaliya120/RSAPIManager)
 [![License](https://img.shields.io/badge/license-Apache%202.0-lightgrey)](LICENSE)
-[![Version](https://img.shields.io/badge/SPM-1.0.0-brightgreen)](https://github.com/rahulsohaliya120/RSAPIManager/releases)
+[![Version](https://img.shields.io/badge/SPM-1.1.0-brightgreen)](https://github.com/rahulsohaliya120/RSAPIManager/releases)
 
 A reusable Swift API Manager using Alamofire. Supports GET, POST, PUT, DELETE, and Multipart requests with flexible encodings, headers, and error handling — perfect for any iOS project.
 
@@ -46,7 +46,7 @@ To integrate **RSAPIManager** into your Xcode project:
 1. Open your project in Xcode.  
 2. Go to **File → Add Packages...**  
 3. Enter the repository URL: https://github.com/rahulsohaliya120/RSAPIManager.git
-4. Choose **Version: Up to Next Major (1.0.0 < 2.0.0)**  
+4. Choose **Version: Up to Next Major (1.1.0 < 2.0.0)**  
 5. Add the package to your project target.
 
 ### Option 2 — Using `Package.swift`
@@ -54,7 +54,7 @@ If you’re using your own Swift Package, add this dependency:
 
 ```swift
 dependencies: [
- .package(url: "https://github.com/rahulsohaliya120/RSAPIManager.git", from: "1.0.0")
+ .package(url: "https://github.com/rahulsohaliya120/RSAPIManager.git", from: "1.1.0")
 ]
 ```
 
@@ -67,7 +67,7 @@ import RSAPIManager
 
 To integrate RSAPIManager using CocoaPods, add this line to your Podfile:
 ```
-pod 'RSAPIManager', '~> 1.0.0'
+pod 'RSAPIManager', '~> 1.1.0'
 ```
 
 Then run:
