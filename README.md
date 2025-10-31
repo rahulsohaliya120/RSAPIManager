@@ -63,7 +63,7 @@ Then import it:
 import RSAPIManager
 ```
 
-### 🧩 Option 3 — CocoaPods
+### Option 3 — CocoaPods
 
 To integrate RSAPIManager using CocoaPods, add this line to your Podfile:
 ```
