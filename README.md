@@ -1,6 +1,7 @@
 # RSAPIManager
 
 [![Swift Package Index](https://img.shields.io/badge/Swift_Package_Index-Available-green?logo=swift)](https://swiftpackageindex.com/rahulsohaliya120/RSAPIManager)
+[![CocoaPods](https://img.shields.io/badge/CocoaPods-Available-red?logo=cocoapods)](https://cocoapods.org/pods/RSAPIManager)
 [![Swift](https://img.shields.io/badge/Swift-5.9+-orange?logo=swift)](https://swift.org)
 [![Platform](https://img.shields.io/badge/platforms-iOS%2016%2B-blue)](https://swiftpackageindex.com/rahulsohaliya120/RSAPIManager)
 [![License](https://img.shields.io/badge/license-Apache%202.0-lightgrey)](LICENSE)
@@ -59,6 +60,23 @@ dependencies: [
 
 ```
 Then import it:
+import RSAPIManager
+```
+
+### 🧩 Option 3 — CocoaPods
+
+To integrate RSAPIManager using CocoaPods, add this line to your Podfile:
+```
+pod 'RSAPIManager', '~> 1.0.0'
+```
+
+Then run:
+```
+pod install
+```
+
+Now import it:
+```
 import RSAPIManager
 ```
 
