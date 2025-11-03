@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = 'RSAPIManager'
-  s.version          = '1.1.0'
+  s.version          = '1.2.0'
   s.summary          = 'A reusable Swift API Manager using Alamofire with GET, POST, PUT, DELETE, and Multipart support.'
   s.description      = <<-DESC
 A reusable Swift API Manager built on top of Alamofire, supporting GET, POST, PUT, DELETE, and Multipart API calls 

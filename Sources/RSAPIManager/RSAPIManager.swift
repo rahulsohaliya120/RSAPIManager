@@ -12,6 +12,8 @@ public class API_Manager {
     private var alamofireManager = Alamofire.Session.default
     private var currentDataRequest: DataRequest!
     
+    public var baseURL = ""
+    
     public enum RESPONSE_TYPE {
         case SUCCESS
         case ERROR
@@ -61,9 +63,9 @@ public class API_Manager {
         alamofireManager.session.configuration.timeoutIntervalForRequest = 180
     }
     
-    struct APIConfig {
-        static let baseURL = "https://api.restful-api.dev/"
-    }
+//    struct APIConfig {
+//        static let baseURL = "https://api.restful-api.dev/"
+//    }
 }
 
 // Common Method
@@ -306,8 +308,11 @@ extension API_Manager {
         guard checkInternetConnection() else { return }
         if isShowLoader { Loader.shared.show() }
 
+//        let finalURL = requestURL.lowercased().hasPrefix("http") ?
+//        requestURL : "\(APIConfig.baseURL)\(requestURL)"
+        
         let finalURL = requestURL.lowercased().hasPrefix("http") ?
-        requestURL : "\(APIConfig.baseURL)\(requestURL)"
+        requestURL : "\(baseURL)\(requestURL)"
 
         let encoding: ParameterEncoding = (encodingType == .jsonEncoding)
         ? JSONEncoding.default : URLEncoding.default
@@ -668,10 +673,16 @@ extension API_Manager {
             
             // ✅ Use BASE_URL fallback
             let finalURL: String
+//            if requestURL.lowercased().hasPrefix("http") {
+//                finalURL = requestURL
+//            } else {
+//                finalURL = "\(APIConfig.baseURL)\(requestURL)"
+//            }
+            
             if requestURL.lowercased().hasPrefix("http") {
                 finalURL = requestURL
             } else {
-                finalURL = "\(APIConfig.baseURL)\(requestURL)"
+                finalURL = "\(baseURL)\(requestURL)"
             }
             
             alamofireManager.upload(multipartFormData: { multipartFormData in
